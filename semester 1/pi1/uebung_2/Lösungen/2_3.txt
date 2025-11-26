@@ -1,0 +1,7 @@
+Aufgabe 2.3: Algorithmus mit Struktogramm darstellen
+Überlegen Sie sich für ein alltägliches Problem einen Algorithmus zur Problemlösung und
+stellen diesen als Struktogramm dar, markieren Anweisungen, Operatoren und
+Kontrollstrukturen und benennen diese. Ihre Kommilitonen sollen herausfinden, welches
+alltägliche Problem Ihr Algorithmus löst. Daher verwenden Sie bitte nur Probleme, die auch
+alle anderen kennen und die nicht bereits in der Vorlesung besprochen wurden oder Teil
+dieses Übungsblatts sind.

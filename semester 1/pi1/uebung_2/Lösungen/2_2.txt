@@ -1,0 +1,9 @@
+Aufgabe 2.2: Algorithmus mit Pseudocode darstellen und analysieren
+Nehmen Sie an, dass Sie eine Messwertreihe in einer geeigneten Variablen (genauer einem
+Array) measSeries vorliegen haben. Die Variable hat dabei die Länge numberMeas
+(entspricht der Anzahl der Messwerte) und Sie sollen für die Messwertreihe den Mittelwert
+und den Maximalwert bestimmen. Um einzelne Messwerte aus der Variable auszulesen,
+können Sie diese im Pseudocode per measSeries[i] ansprechen, wobei i = 0,…,
+(numberMeas – 1). Entwickeln Sie hierfür einen Algorithmus, stellen diesen mit
+Pseudocode dar, markieren Anweisungen, Operatoren und Kontrollstrukturen und benennen
+diese.
