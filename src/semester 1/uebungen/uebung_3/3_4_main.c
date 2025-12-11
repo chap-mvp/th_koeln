@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "myHeader33.h"
+#include "3_4.h"
 
 int main(void) {
     int myArray[] = {5, 2, 9, 1, 5, 6};

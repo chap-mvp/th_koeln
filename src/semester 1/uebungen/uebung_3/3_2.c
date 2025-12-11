@@ -1,4 +1,7 @@
 /*
+Aufgabe 3.2: Wahr oder falsch? 
+Erklären Sie, welches Ergebnis der folgende Code liefert und was das mit Typumwandlung 
+zu tun hat.
 
 #include <stdio.h>
 
@@ -17,10 +20,5 @@ int main()
     return EXIT_SUCCESS;
 }
 
-
-
-IMPLIZITE UMWANDLUNG isTrue != 0 ? "ES IST WAHR" : "ES IST NICHT WAHR"
-
-OUTPUT: ES IST WAHR, DA isTrue != 0.
-
+Implizite Typumwandlung zwischen booleschen (0/1) Werten und Integer
 */

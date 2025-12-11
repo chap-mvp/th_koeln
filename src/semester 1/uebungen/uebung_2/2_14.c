@@ -20,18 +20,5 @@ int main () {
 
     char hex[] = {value};
 
-    /* 
-    
-    printf("%d\n", &value);
-    for (int i = 0; i < value; i++) {
-        printf("0x%X | ", hex[i]);
-    }
-
-    */
-    
-
-
     printf("\n0x%X", value);
 }
-
-
