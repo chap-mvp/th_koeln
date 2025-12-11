@@ -7,3 +7,25 @@ daraus), um eine Zufallszahl zu generieren. Setzen Sie diesen Algorithmus in C u
 Variable nRoll kann entweder im Programm definiert werden oder aber über scanf()
 eingelesen werden.
 */
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main () {
+    srand(time(NULL));
+
+    int nRoll;
+    int sum = 0, min = 1, max = 6;
+
+    printf("\nHow many times would you like to roll? - ");
+    scanf("%d", &nRoll);
+
+    for (int i = 1; i <= nRoll; i++) {
+        int r = rand() % max + min;
+        sum = sum + r;
+        printf("\nR_%d = %d: Sum = %d", i, r, sum);
+    }
+
+}

@@ -7,3 +7,12 @@ können Sie diese im Pseudocode per measSeries[i] ansprechen, wobei i = 0,…,
 (numberMeas – 1). Entwickeln Sie hierfür einen Algorithmus, stellen diesen mit
 Pseudocode dar, markieren Anweisungen, Operatoren und Kontrollstrukturen und benennen
 diese.
+
+
+
+numberMeas = 3;
+measSearies[] = {'1','2','3','4'};
+
+mittelWert = (for (int i = 0; i = numberMeas; i++) sum(measSearies[i])/numberMeas)
+maximalWert = if (tempMax = measSearies[i] < measSearies[i + 1] ? tempMax = measSearies[i + 1] : tempMax = measSearies[i])
+              

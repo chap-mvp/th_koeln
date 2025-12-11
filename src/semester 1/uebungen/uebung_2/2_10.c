@@ -10,3 +10,15 @@ Erwartete Ausgabe:
 2^9 = 512
 2^10 = 1024
 */
+
+#include <stdio.h>
+
+int main () {
+    int exponent;
+    printf("What exponent of 2 would you like to print? - ");
+    scanf("%d", &exponent);
+
+    for (int i = 0; i <= exponent; i++) {
+        printf("2^(%d) = %d\n", i, 1 << i);
+    }
+}

@@ -1,6 +1,0 @@
-Aufgabe 2.1: Algorithmus mit PAP darstellen und analysieren
-Entwickeln Sie für das Eierkochen (5, 7 und 10 Minuten Eier) einen Algorithmus, stellen
-diesen als PAP dar, markieren Anweisungen, Operatoren und Kontrollstrukturen und
-benennen diese.
-
-

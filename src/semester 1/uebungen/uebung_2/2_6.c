@@ -7,7 +7,7 @@ Sie das Vorgehen.
 */
 
 #include <stdio.h>
-#include "header26.h"
+#include "2_6.h"
 
 int main(void)
 {
