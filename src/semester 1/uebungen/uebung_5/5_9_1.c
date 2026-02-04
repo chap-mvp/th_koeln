@@ -3,9 +3,7 @@
 void doubleArrayElements(const int arrayOne[], int arrayTwoTimes[], int size)
 {
     for (int i = 0; i < size; i++)
-    {
         arrayTwoTimes[i] = 2 * arrayOne[i];
-    }
 }
 
 int main(void)
@@ -18,16 +16,14 @@ int main(void)
 
     printf("Original:  ");
     for (int i = 0; i < size; i++)
-    {
         printf("%d ", arrayOne[i]);
-    }
+
     printf("\n");
 
     printf("Doubled:   ");
     for (int i = 0; i < size; i++)
-    {
         printf("%d ", arrayTwoTimes[i]);
-    }
+
     printf("\n");
 
     return 0;

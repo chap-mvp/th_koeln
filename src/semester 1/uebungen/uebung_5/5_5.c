@@ -2,10 +2,6 @@
 
 #define MAX_RESISTORS 10
 
-/**
- * Reads resistance values from user
- * Returns the number of values read
- */
 int readResValue(float resistances[], int maxCount)
 {
     int count;
@@ -28,26 +24,16 @@ int readResValue(float resistances[], int maxCount)
     return count;
 }
 
-/**
- * Calculates equivalent resistance for parallel circuit
- * Formula: 1/R_eq = 1/R1 + 1/R2 + ... + 1/Rn
- */
 float calcEquiRes(float resistances[], int count)
 {
     float sum = 0.0;
 
     for (int i = 0; i < count; i++)
-    {
         if (resistances[i] != 0)
-        {
             sum += 1.0 / resistances[i];
-        }
-    }
 
     if (sum == 0)
-    {
         return 0.0;
-    }
 
     return 1.0 / sum;
 }
@@ -63,13 +49,9 @@ int main(void)
 
     printf("\nEntered resistances:\n");
     for (int i = 0; i < count; i++)
-    {
         printf("  R%d = %.2f Ohm\n", i + 1, resistances[i]);
-    }
 
     float equivalent = calcEquiRes(resistances, count);
 
     printf("\nEquivalent parallel resistance: %.2f Ohm\n", equivalent);
-
-    return 0;
 }
