@@ -5,7 +5,7 @@ b)  Initialisieren Sie den Zufallszahlengenerator, so dass er jedes Mal neue Zah
 c)  In einer Schleife sollen 6 zufällige Zahlen zwischen 1 und 49 erzeugt werden.
 d)  Geben Sie anschließend die Zahlen aus.
 
-Es gibt noch ein kleines Problem: Es könnte sei, dass die gleichen Zahlen mehrmals
+Es gibt noch ein kleines Problem: Es könnte sein, dass die gleichen Zahlen mehrmals
 generiert werden, aber die Lottozahlen können nur einmal vorkommen. Entwerfen Sie einen
 Algorithmus, um dieses Problem zu beheben.
 */
