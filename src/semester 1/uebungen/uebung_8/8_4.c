@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #define MAXLINE 100
-
+ 
 int main()
 {
     char *completeText = NULL; // Speichert gesamten Text

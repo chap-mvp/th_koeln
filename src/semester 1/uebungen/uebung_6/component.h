@@ -3,7 +3,6 @@
 
 #include <stdio.h>
 
-// Enum for component types
 typedef enum
 {
     RESISTOR = 0,
@@ -11,7 +10,6 @@ typedef enum
     INDUCTOR = 2
 } ComponentType;
 
-// Structure for electronic component
 typedef struct
 {
     int id;
@@ -20,12 +18,11 @@ typedef struct
     float tolerance;
 } Component;
 
-// Function declarations
-void addComponent(void);
-void listAllComponents(void);
-void searchID(void);
-void deleteID(void);
-void calcTolerance(void);
+void addComponent();
+void listAllComponents();
+void searchID();
+void deleteID();
+void calcAverageTolerance();
 const char *getComponentTypeName(ComponentType type);
 
 #define DATABASE_FILE "database.txt"

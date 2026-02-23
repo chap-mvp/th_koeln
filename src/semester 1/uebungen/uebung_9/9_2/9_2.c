@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "statistics.h"
+#include "statistics.c"
 
 int main(void)
 {
@@ -12,9 +13,8 @@ int main(void)
 
     printf("Measurements:\n");
     for (int i = 0; i < size; i++)
-    {
-        printf("%.2f ", measurements[i]);
-    }
+        printf("[%.2f] ", measurements[i]);
+
     printf("\n\n");
 
     // Calculate statistics
@@ -26,9 +26,8 @@ int main(void)
     // Copy array for median (since it gets sorted)
     float measurementsCopy[10];
     for (int i = 0; i < size; i++)
-    {
         measurementsCopy[i] = measurements[i];
-    }
+
     printf("Median:     %.2f\n", getMedian(measurementsCopy, size));
 
     return EXIT_SUCCESS;

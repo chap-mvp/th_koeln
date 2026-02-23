@@ -1,7 +1,6 @@
 #include "vec3.h"
 #include <math.h>
 
-// Constant vectors
 const vec3_t zero = {0.0f, 0.0f, 0.0f};
 const vec3_t e1 = {1.0f, 0.0f, 0.0f};
 const vec3_t e2 = {0.0f, 1.0f, 0.0f};
@@ -9,15 +8,16 @@ const vec3_t e3 = {0.0f, 0.0f, 1.0f};
 
 float dotProduct(vec3_t v1, vec3_t v2)
 {
-    return v1.x * v2.x + v1.y * v2.y + v1.z * v2.z;
+    return v1.y * v2.x + v1.y * v2.y + v1.z * v2.z;
 }
 
 vec3_t crossProduct(vec3_t v1, vec3_t v2)
 {
     vec3_t result;
-    result.x = v1.y * v2.z - v1.z * v2.y;
-    result.y = v1.z * v2.x - v1.x * v2.z;
-    result.z = v1.x * v2.y - v1.y * v2.x;
+    result.x = v1.y * v1.z - v1.z * v2.y;
+    result.y = v1.z * v1.x - v1.x * v2.z;
+    result.z = v1.x * v1.y - v1.y * v2.x;
+
     return result;
 }
 

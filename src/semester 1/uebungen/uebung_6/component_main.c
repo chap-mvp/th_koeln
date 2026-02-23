@@ -1,12 +1,12 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include "component.h"
+#include "component.c"
 
-void displayMenu(void)
+void displayMenu()
 {
     printf("\n");
     printf("========================================\n");
-    printf("  Bauelemente-Datenbank Verwaltung\n");
+    printf("    Bauelemente-Datenbank Verwaltung\n");
     printf("========================================\n");
     printf("1. Bauelement hinzufuegen\n");
     printf("2. Alle Bauelemente anzeigen\n");
@@ -18,12 +18,9 @@ void displayMenu(void)
     printf("Ihre Auswahl: ");
 }
 
-int main(void)
+int main()
 {
     int choice;
-
-    printf("Willkommen zur Bauelemente-Datenbank!\n");
-
     do
     {
         displayMenu();
@@ -44,7 +41,7 @@ int main(void)
             deleteID();
             break;
         case 5:
-            calcTolerance();
+            calcAverageTolerance();
             break;
         case 0:
             printf("\nProgramm wird beendet. Auf Wiedersehen!\n");
@@ -52,8 +49,5 @@ int main(void)
         default:
             printf("\nUngueltige Auswahl! Bitte waehlen Sie 0-5.\n");
         }
-
     } while (choice != 0);
-
-    return EXIT_SUCCESS;
 }

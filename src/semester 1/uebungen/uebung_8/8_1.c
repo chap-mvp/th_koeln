@@ -12,7 +12,7 @@ float polynom(float a1, float a2, float x) // CODE Segment
 }
 
 int main()
-{
+{ 
     float coefficients[] = {1.5, 12}; // STACK 
     float step = 1.0 / MEAS_MAX; // STACK
     float *measValues = (float *)malloc(MEAS_MAX * sizeof(float)); // STACK
